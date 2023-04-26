@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script
+      src="https://kit.fontawesome.com/e2a883c998.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <header>
+      <img src="logo.svg" />
+    </header>
+
+    <div id="main-wrapper">
+      <input
+        type="text"
+        id="search"
+        name="search"
+        placeholder="Sök efter din butik.."
+      />
+      <div id="dropdown"></div>
+      <div id="resultsContainer"></div>
+
+      <div class="dropdown">
+        <select id="store-select">
+          <option>Välj butik</option>
+        </select>
+      </div>
+      <div id="event-grid"></div>
+
+      <div id="book-modal">
+        <div id="book-modal-content">
+          <span id="book-modal-close">&times;</span>
+          <div id="selected-event"></div>
+          <form id="book-form">
+            <input type="hidden" id="event-id" name="event-id" />
+            <div>
+              <input type="hidden" id="store-name" name="store-name" disabled />
+            </div>
+            <div>
+              <input type="hidden" id="event-name" name="event-name" disabled />
+            </div>
+            <div>
+              <label for="name"><h2>Namn</h2></label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div>
+              <label for="email"><h2>E-postadress</h2></label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+              <label for="telephone"><h2>Telefonnummer</h2></label>
+              <input type="tel" id="telephone" name="telephone" required />
+            </div>
+            <div>
+              <label for="seats"><h2>Antal platser</h2></label>
+              <input type="number" id="seats" name="seats" required />
+            </div>
+            <button id="book-form-button" type="submit">Boka</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

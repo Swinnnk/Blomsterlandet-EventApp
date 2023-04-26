@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Larish Neue Semibold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("larish_neue_semibold.eot");
+  src: local('☺'),
+       url("larish_neue_semibold.eot#iefix") format("embedded-opentype"),
+       url("larish_neue_semibold.woff2") format("woff2"),
+       url("larish_neue_semibold.woff") format("woff"),
+       url("larish_neue_semibold.ttf") format("truetype"),
+       url("larish_neue_semibold.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Larish Neue Semibold Italic";
+  font-style: italic;
+  font-weight: bold;
+  src: url("larish_neue_semibold_italic.eot");
+  src: local('☺'),
+       url("larish_neue_semibold_italic.eot#iefix") format("embedded-opentype"),
+       url("larish_neue_semibold_italic.woff2") format("woff2"),
+       url("larish_neue_semibold_italic.woff") format("woff"),
+       url("larish_neue_semibold_italic.ttf") format("truetype"),
+       url("larish_neue_semibold_italic.svg") format("svg");
+}
